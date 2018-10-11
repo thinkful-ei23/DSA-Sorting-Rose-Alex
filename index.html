@@ -7,6 +7,7 @@
   let count = 0;
 
   function qSort(arr, start = 0, end = arr.length) {
+    count++
     if (start >= end) { //base case
       return arr;
     }
@@ -79,8 +80,8 @@
 
 
 
-  // console.log(qSort(arr));
-  console.log(mSort(smallSet));
+  console.log(qSort(smallSet));
+  // console.log(mSort(smallSet));
   console.log(count);
 
 </script>
