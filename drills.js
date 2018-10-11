@@ -106,16 +106,25 @@ function randomSort(arr) {
 //Imagine that I gave you twenty books to sort in alphabetical order. 
 //How would you go about it? Can you express this as an algorithm?
 
+//INPUT IS AN ARRAY OF STRINGS
+function sortBooks(books) {
+  qSort(books);
+  return books;
+}
+// OUTPUT IS A SORTED ARRAY OF STRINGS
+
 
 function main() {
   const arr = [89,30,25,32,72,70,51,42,25,24,53,55,78,50,13,40,48,32,26,2,14,33,45,72,56,44,21,88,27,68,15,62,93,98,73,28,16,46,87,28,65,38,67,16,85,63,23,69,64,91,9,70,81,27,97,82,6,88,3,7,46,13,11,64,76,31,26,38,28,13,17,69,90,1,6,7,64,43,9,73,80,98,46,27,22,87,49,83,6,39,42,51,54,84,34,53,78,40,14,5];
   const smallSet = [10,9,9,2,7,2,4,6,5,8,5,3,1];
   const sortedSet = [1,2,3,4,5,6,7,8,9,10];
   const sortedSet2 = [1,1,2,3,4,4,5,6,7,8,8,9,10];
+  const names = ['rose','allen','roxy', 'alan',  'alex'];
+  console.log(sortBooks(names));
   // console.log(qSort(smallSet));
   // console.log(mSort(smallSet));
   // console.log(bucketSort(smallSet, 1, 10));
-  console.log(randomSort(sortedSet2));
+  // console.log(randomSort(sortedSet2));
 }
 
 main();
